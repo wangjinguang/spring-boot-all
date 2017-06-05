@@ -40,4 +40,70 @@ public class ProcessDefineInfo implements Serializable{
 	/**创建时间*/
 	@JSONField(format="yyyy-MM-dd HH:mm:ss")
 	private Date createTime;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getProcessName() {
+		return processName;
+	}
+
+	public void setProcessName(String processName) {
+		this.processName = processName;
+	}
+
+	public String getProcessKey() {
+		return processKey;
+	}
+
+	public void setProcessKey(String processKey) {
+		this.processKey = processKey;
+	}
+
+	public String getProcessFile() {
+		return processFile;
+	}
+
+	public void setProcessFile(String processFile) {
+		this.processFile = processFile;
+	}
+
+	public int getProcessStatus() {
+		return processStatus;
+	}
+
+	public void setProcessStatus(int processStatus) {
+		this.processStatus = processStatus;
+	}
+
+	public String getDeploymentId() {
+		return deploymentId;
+	}
+
+	public void setDeploymentId(String deploymentId) {
+		this.deploymentId = deploymentId;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public static int getDeploy() {
+		return DEPLOY;
+	}
+
+	public static int getUndeploy() {
+		return UNDEPLOY;
+	}
+	
+	
 }
